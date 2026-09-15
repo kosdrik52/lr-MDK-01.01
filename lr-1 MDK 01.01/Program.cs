@@ -47,5 +47,10 @@ namespace lr_1_MDK_01._01
                 Console.WriteLine("Некорректный выбор. Введите 1, 2 или 3.");
             }
         }
+        static double CalculateTotalVolume(int length, int width, int height)
+        {
+            
+            return (length * width * height) / 1000.0;
+        }
     }
 }
