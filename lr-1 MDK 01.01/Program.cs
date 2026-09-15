@@ -34,5 +34,18 @@ namespace lr_1_MDK_01._01
                 Console.WriteLine("Значение должно быть больше нуля. Попробуйте снова.");
             }
         }
+        static int ReadFishSize()
+        {
+            while (true)
+            {
+                Console.Write("Введите размер рыбок (1 — мелкие, 2 — средние, 3 — крупные): ");
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out int size) && size >= 1 && size <= 3)
+                {
+                    return size;
+                }
+                Console.WriteLine("Некорректный выбор. Введите 1, 2 или 3.");
+            }
+        }
     }
 }
