@@ -52,5 +52,9 @@ namespace lr_1_MDK_01._01
             
             return (length * width * height) / 1000.0;
         }
+        static double CalculateUsableVolume(double totalVolume)
+        {
+            return totalVolume * 0.8;
+        }
     }
 }
