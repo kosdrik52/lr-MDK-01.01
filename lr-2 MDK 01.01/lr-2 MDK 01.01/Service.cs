@@ -12,6 +12,11 @@ namespace lr_2_MDK_01._01
         public decimal Price;
         public int Stock;
 
-       
+        public Service(string name, decimal price, int stock)
+        {
+            Name = name;
+            Price = price;
+            Stock = stock;
+        }
     }
 }
