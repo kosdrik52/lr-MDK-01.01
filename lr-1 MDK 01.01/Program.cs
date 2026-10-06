@@ -48,5 +48,17 @@ namespace lr_1_MDK_01._01
                 Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
             }
         }
+        static int ReadPositiveInt(string prompt)
+        {
+            while (true)
+            {
+                int value = ReadInt(prompt);
+                if (value > 0)
+                {
+                    return value;
+                }
+                Console.WriteLine("Значение должно быть больше нуля. Попробуйте снова.");
+            }
+        }
     }
 }
