@@ -10,6 +10,7 @@ namespace lr_2_MDK_01._01
     {
         static void Main(string[] args)
         {
+           
         }
     }
 }
