@@ -35,5 +35,18 @@ namespace lr_1_MDK_01._01
             Console.WriteLine($"Полезный объём: {usableVolume:0.##} л");
             Console.WriteLine($"Максимальное количество рыбок: {fishCount}");
         }
+        static int ReadInt(string prompt)
+        {
+            while (true)
+            {
+                Console.Write(prompt);
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out int value))
+                {
+                    return value;
+                }
+                Console.WriteLine("Некорректный ввод. Пожалуйста, введите целое число.");
+            }
+        }
     }
 }
