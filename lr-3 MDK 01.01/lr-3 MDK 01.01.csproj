@@ -52,6 +52,7 @@
     <Compile Include="ReadQuantity.cs" />
     <Compile Include="ReadServiceNumber.cs" />
     <Compile Include="Service.cs" />
+    <Compile Include="TryProcessOrder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
