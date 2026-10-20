@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CreateServices.cs" />
     <Compile Include="OrderItem.cs" />
+    <Compile Include="PrintRemainingStock.cs" />
     <Compile Include="PrintServices.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
