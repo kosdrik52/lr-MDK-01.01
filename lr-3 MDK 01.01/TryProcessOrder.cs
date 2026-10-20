@@ -32,5 +32,12 @@ namespace lr_3_MDK_01._01
                 return false;
             }
         }
+        for (int i = 0; i < services.Count; i++)
+        {
+            services[i].Stock -= requestedQuantities[i];
+            total += services[i].Price * requestedQuantities[i];
+        }
+
+        return true;
 
     }
