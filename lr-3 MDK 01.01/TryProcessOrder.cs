@@ -15,7 +15,7 @@ namespace lr_3_MDK_01._01
         total = 0;
         unavailableService = string.Empty;
 
-        // Суммируем количество каждой услуги в заказе.
+      
         int[] requestedQuantities = new int[services.Count];
 
         foreach (OrderItem item in order)
@@ -23,7 +23,7 @@ namespace lr_3_MDK_01._01
             requestedQuantities[item.ServiceIndex] += item.Quantity;
         }
 
-        // Проверяем, хватает ли каждой услуги.
+   
         for (int i = 0; i < services.Count; i++)
         {
             if (requestedQuantities[i] > services[i].Stock)
