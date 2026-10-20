@@ -11,6 +11,22 @@ namespace lr_3_MDK_01._01
         static void Main(string[] args)
         {
             List<Service> services = CreateServices();
+            PrintServices(services);
+            List<OrderItem> order = ReadOrder(services.Count);
+            if (TryProcessOrder(
+                    services,
+                    order,
+                    out decimal total,
+                    out string unavailableService))
+            {
+                Console.WriteLine($"\nЗаказ принят. Стоимость: {total} руб.");
+            }
+            else
+            {
+                Console.WriteLine(
+                    $"\nЗаказ не принят: недостаточно услуги «{unavailableService}».");
+            }
+            PrintRemainingStock(services);
         }
     }
 }
