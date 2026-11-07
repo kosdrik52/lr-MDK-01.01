@@ -17,5 +17,5 @@ namespace praktika
                 return 25;
             else return 0;
         }
-    }
+    }-
 }
