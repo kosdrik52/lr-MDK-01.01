@@ -40,7 +40,7 @@ namespace praktika
         {
             return 0;
         }
-        ,
+        
     }
     
 }

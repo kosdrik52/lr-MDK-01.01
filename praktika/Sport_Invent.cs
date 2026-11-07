@@ -16,7 +16,7 @@ namespace praktika
                 return 30;
             if (soldcount_ > 300)
                 return 50;
-            return 0;
+            else return 0;
         }
     }
 }
