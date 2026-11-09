@@ -35,6 +35,12 @@ namespace praktika
             inv1.SetPrice(500);
             inv1.SetSoldcount(50); 
             products.Add(inv1);
+
+            Sport_Invent inv2 = new Sport_Invent();
+            inv2.SetName("Инвентарь (штанга)");
+            inv2.SetPrice(10000);
+            inv2.SetSoldcount(200); 
+            products.Add(inv2);
         }
     }
 }
