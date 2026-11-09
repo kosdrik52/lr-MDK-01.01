@@ -42,9 +42,8 @@ namespace praktika
             inv2.SetSoldcount(200); 
             products.Add(inv2);
 
-            Console.WriteLine();
             Console.WriteLine($"{"Название товара",-30} | {"Цена",8} | {"Кол-во",6} | {"Стоимость",10} | {"Скидка",6} | {"Сумма со скидкой",15}");
-            Console.WriteLine();
+            
         }
     }
 }
