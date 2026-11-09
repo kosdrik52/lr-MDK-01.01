@@ -29,6 +29,12 @@ namespace praktika
             food2.SetPrice(3000m);
             food2.SetSoldcount(12); 
             products.Add(food2);
+
+            Sport_Invent inv1 = new Sport_Invent();
+            inv1.SetName("Инвентарь (гантели)");
+            inv1.SetPrice(500m);
+            inv1.SetSoldcount(50); 
+            products.Add(inv1);
         }
     }
 }
