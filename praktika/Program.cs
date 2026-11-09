@@ -21,8 +21,14 @@ namespace praktika
             Sport_Eat food1 = new Sport_Eat();
             food1.SetName("Спортивное питание (батончик)");
             food1.SetPrice(150m);
-            food1.SetSoldcount(7); // 5-10 единиц -> скидка 15%
-            products.Add(food1);
+            food1.SetSoldcount(7); 
+            products.Add(food1); 
+            
+            Sport_Eat food2 = new Sport_Eat();
+            food2.SetName("Спортивное питание (протеин)");
+            food2.SetPrice(3000m);
+            food2.SetSoldcount(12); 
+            products.Add(food2);
         }
     }
 }
